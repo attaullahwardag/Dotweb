@@ -1,0 +1,347 @@
+/*--
+DOTWEB VERSION 0.0.1 HTML/CSS AND Bootstrap Template by:
+https://www.AkExpalins.com/
+*/
+
+*{ 
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+a{ text-decoration: none; }
+a:hover{ text-decoration: none; }
+li{ list-style: none; }
+p{
+	font-size: 0.9rem;
+	line-height: 1.6;
+	font-weight: 400;
+	color:#606060;
+}
+h2{
+	font-size: 0.9rem;
+	margin: 20px 0 15px 0;
+	font-weight: blod;
+	line-height: 1.1;
+	word-spacing: 4px;
+}
+i{
+	color:#fc6b03;
+}
+.header{
+	width: 100%;
+	height: 100vh;
+	background-image:linear-gradient(rgba(78,48,48,0.6),rgba(78,48,48,0.6)), url('../images/header-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0% 75%, 0 0);
+	position: relative;
+}
+.header:before{
+	content: "";
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: .4;
+	z-index: -1;
+	background:linear-gradient(to right, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+}
+.navbar:before{
+	content: "";
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: .4;
+	z-index: -1;
+	background:linear-gradient(to right, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+}
+.nav-item a{
+	color: #fff!important;
+	font-weight: bold;
+}
+.header-section{
+	width: 100%;
+	height: inherit;
+	color: white;
+	text-align: center;
+	position: relative;
+}
+.center-div{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+}
+.center-div p{
+	font-size: 1.3rem;
+	padding: 10px 0 20px 0;
+	color: #fff;
+}
+.header-buttons a{
+	border:1px solid #fff;
+	border-radius: 100px;
+	margin: 0 5px;
+	padding: 12px 35px;
+	outline: none;
+	color: #fff;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.4;
+	text-align: center;
+}
+.header-buttons a:hover{
+	color: #dc3545;
+	background: #fff;
+	text-decoration: none;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+/********** Extra-Section start here *************/
+
+.extra-section{
+	with:100%;
+	text-align: center;
+	height: auto;
+	margin: 100px 0;
+}
+.extra-div{
+	background:#fff;
+	border: medium none;
+	padding: 50px;
+	transition: 0.3s;
+}
+.extra-div:hover{
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+	transform: translateY(-20px);
+
+}
+
+/********** Services-Section start here *************/
+
+.services-section{
+	background:#f7f7f9;
+	padding: 50px 0;
+	margin-bottom: 50px;
+}
+.headings{
+	margin-bottom: 50px;
+}
+.headings h1{
+	font-size: 1.5rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.names h1{
+	color:#2e2e2e;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.services-icon{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.progress{
+	margin-bottom: 25px;
+}
+/********* projectcount-section starts here ************/
+.projectcount-section{
+	margin: 100px 0;
+}
+.projectcount-section h1{
+	font-size: 2rem;
+	text-align: center;
+}
+
+/********* pricing-section starts here ************/
+.pricing-section{
+	width: 100%;
+	min-height: 100vh;
+	padding:50px 0;
+	position: relative;
+}
+.pricing-section:before{
+	content: "";
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	background:linear-gradient(160deg, #fc6b03 55%, #fff 0%);
+}
+.money{
+	font-size: 40px;
+	line-height: 1;
+	color:#606060;
+}
+.card{
+	transition: 0.4s ease;
+	border-radius: 0 !important;
+
+}
+.card-header{
+	font-size: 1.6rem;
+	font-weight: bold;
+	background: #fff;
+	padding: 25px 0!important;
+
+}
+.card-body{
+	padding: 30px 0px !important;
+}
+.card-body li{
+	margin: 10px 0;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 1.6;
+	color: #606060;
+}
+.card-footer{
+	background: #fff;
+	padding: 30px 0px !important;
+}
+.card-footer a{
+	border:1px solid #fd7e14;
+	border-radius: 100px;
+	margin: 0 5px;
+	padding: 12px 35px;
+	outline: none;
+	color: #fd7e14;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.4;
+	text-align: center;
+}
+.card:hover .card-footer a{
+	color: #fff;
+	background: #fd7e14;
+	text-decoration: none;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+.card:hover{
+	transform: translateY(-20px);
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+/********* pricing-section ends here ************/
+
+/********* feadback-section starts here ************/
+.feakback-section{
+	width: 100%;
+	min-height: 100vh;
+	padding: 50px 0;
+}
+.box{
+	text-align: center;
+	transition: 0.3s ease;
+}
+
+.box a{
+	position: relative;
+}
+.box a img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+.carousel-indicators{
+	right: 0;
+	bottom: -60px!important;
+}
+.carousel-indicators li{
+	background: #fd7e14;
+}
+/********* feadback-section ends here ************/
+/********* contact-section Starts here ************/
+.contact-section{
+	width: 100%;
+	min-height: 100vh;
+	padding:80px 0;
+	position: relative;
+}
+.contact-section:before{
+	content: "";
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	background:linear-gradient(340deg, #fc6b03 55%, #fff 0%);
+}
+.myb button{
+	border:1px solid #fff;
+	border-radius: 100px;
+	margin: 0 5px;
+	padding: 12px 35px;
+	outline: none;
+	color: #fc6b03;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.4;
+	text-align: center;
+}
+.myb button:hover{
+	color: #fff;
+	background: #fc6b03;
+	text-decoration: none;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+form input{
+	border-radius: none!important;
+}
+
+/********** newsletter-section ****************/
+.newsletter-section{
+	width: 100%;
+	height: auto;
+	margin: 80px auto;
+
+}
+.newsletter-input{
+	border-radius: 100px 0 0 100px;
+	min-width: 45px;
+	min-width: 150px;
+}
+.subscribe-button{
+	border-radius: 0 100px 100px 0;
+	background: #fc6b03;
+	color: #fff;
+}
+/********** newsletter-section ends here ****************/
+
+/********** footer-section ****************/
+.footer-section{
+	width: 100%;
+	min-height: 500px;
+	background:#f7f7f9;
+	position: relative; 
+}
+.footer-section a{
+	color: #fc6b03;
+}
+.footer-section p{
+	color: #606060;
+}
+#mybtn{
+	position: fixed;
+	bottom: 20px;
+	right: 40px;
+	z-index: 99;
+	border:none;
+	color: #fff;
+	background:#fc6b03;
+	padding: 10px;
+}
